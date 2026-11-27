@@ -1,0 +1,78 @@
+@import 'tailwindcss';
+
+/* Design tokens — mirrored from the Figma "Admin Dashboard" variables. */
+@theme {
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-brand: 'Archivo Black', 'Plus Jakarta Sans', sans-serif;
+
+  --color-ink: #111318;
+  --color-muted: #6b6f76;
+  --color-subtle: #9a9ea5;
+  --color-line: #e7e8e4;
+  --color-pearl: #f5f6f4;
+  --color-white: #ffffff;
+  --color-cta: #e04d38;
+  --color-coral: #ff654f;
+  --color-peach: #ffe8e1;
+  --color-lime: #d8f56a;
+  --color-lime-soft: #f1f9d2;
+  --color-success: #25845c;
+  --color-success-soft: #e3f2ea;
+  --color-info: #3478c8;
+  --color-info-soft: #e3edf8;
+  --color-warning: #d68a25;
+  --color-warning-soft: #fbebd6;
+  --color-violet: #7a5af8;
+}
+
+/* Typography presets from the Figma text styles. */
+@utility text-h1 {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 700;
+}
+@utility text-h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+@utility text-body {
+  font-size: 14px;
+  line-height: 20px;
+}
+@utility text-caption {
+  font-size: 12px;
+  line-height: 16px;
+}
+@utility text-overline {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 0.88px;
+}
+@utility text-num-l {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -0.64px;
+}
+@utility text-num-m {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+  body {
+    @apply bg-pearl font-sans text-ink antialiased;
+  }
+  button {
+    cursor: pointer;
+  }
+}
